@@ -11,7 +11,7 @@ This is a customized fork of the [Supernote-Obsidian plugin](https://github.com/
 
 ### Note Categorization
 - Automatically categorize notes as "daily notes" or "concept notes" based on filename patterns
-- Send daily notes to a dedicated Daily Notes folder
+- Send daily notes to a dedicated folder of your choice
 - Send concept notes (non-daily) to a separate folder or the vault root
 - Customize the detection pattern with moment.js format strings
 
@@ -38,8 +38,8 @@ In the plugin settings, you can specify custom paths for:
 The plugin can intelligently sort notes based on their filename:
 - Enable note categorization: Toggle this setting on to use smart categorization
 - Daily note pattern: Use a moment.js format to identify which notes are daily notes (default: `YYYYMMDD-HHMMSS`)
-- Daily note output folder: The folder where daily notes will be placed (default: `daily`)
-- Concept note output folder: The folder where non-daily notes will be placed (default: root of vault)
+- Daily note output folder: The folder where daily notes will be placed
+- Concept note output folder: The folder where non-daily notes will be placed (leave empty to use vault root)
 
 ## Workflow Examples
 
@@ -47,13 +47,13 @@ The plugin can intelligently sort notes based on their filename:
 1. Supernote devices automatically name files with a timestamp format like `20250519-123045.note`
 2. Enable note categorization in the plugin settings
 3. Set the daily note pattern to `YYYYMMDD-HHMMSS` (the default)
-4. Set the daily note output folder to `daily`
-5. When exported, these timestamp-named notes will automatically go to your `daily` folder
+4. Set your preferred output folder for daily notes
+5. When exported, these timestamp-named notes will automatically go to your chosen daily notes folder
 
 ### Concept Notes Workflow
 1. When you create custom-named notes on your Supernote (like `Meeting Notes.note` or `Project Ideas.note`)
 2. These will be recognized as concept notes (not matching the timestamp pattern)
-3. When exported, these concept notes will be placed in your designated folder (or the vault root if left empty)
+3. When exported, these concept notes will be placed in your designated concept folder (or the vault root if left empty)
 
 ## Development
 
