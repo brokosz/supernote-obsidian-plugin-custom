@@ -1,0 +1,3 @@
+[submodule "supernote-typescript"]
+	path = supernote-typescript
+	url = https://gitlab.com/Tiemen/supernote.git

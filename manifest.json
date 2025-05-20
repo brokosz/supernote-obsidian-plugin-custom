@@ -1,0 +1,10 @@
+{
+  "id": "supernote-obsidian-plugin-custom",
+  "name": "Supernote Integration (Custom)",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Enhanced Supernote integration with custom paths and note categorization. View, convert, and manage Supernote files within Obsidian.",
+  "author": "brokosz",
+  "authorUrl": "https://github.com/brokosz",
+  "isDesktopOnly": false
+}

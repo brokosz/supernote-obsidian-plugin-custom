@@ -1,0 +1,18 @@
+{
+  "directConnectIP": "",
+  "invertColorsWhenDark": true,
+  "showTOC": true,
+  "showExportButtons": true,
+  "collapseRecognizedText": false,
+  "noteImageMaxDim": 800,
+  "customNotesPath": "",
+  "customImagesPath": "_assets/supernote/img",
+  "customMarkdownPath": "_assets/supernote/md",
+  "customPDFPath": "_assets/supernote/pdf",
+  "useNoteCategorization": true,
+  "dailyNotePattern": "",
+  "conceptNoteOutputFolder": "",
+  "dailyNoteOutputFolder": "daily",
+  "isCustomDictionaryEnabled": false,
+  "customDictionary": []
+}
