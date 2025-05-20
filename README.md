@@ -10,9 +10,9 @@ This is a customized fork of the [Supernote-Obsidian plugin](https://github.com/
 - Automatically create necessary folders if they don't exist
 
 ### Note Categorization
-- Automatically categorize notes as "daily notes" or "concept notes" based on filename patterns
+- Automatically categorize notes as "daily notes" or "other notes" based on filename patterns
 - Send daily notes to a dedicated folder of your choice
-- Send concept notes (non-daily) to a separate folder or the vault root
+- Send other notes to a separate folder or the vault root
 - Customize the detection pattern with moment.js format strings
 
 ### Folder Suggestion
@@ -39,7 +39,7 @@ The plugin can intelligently sort notes based on their filename:
 - Enable note categorization: Toggle this setting on to use smart categorization
 - Daily note pattern: Use a moment.js format to identify which notes are daily notes (default: `YYYYMMDD-HHMMSS`)
 - Daily note output folder: The folder where daily notes will be placed
-- Concept note output folder: The folder where non-daily notes will be placed (leave empty to use vault root)
+- Other notes output folder: The folder where non-daily notes will be placed (leave empty to use vault root)
 
 ## Workflow Examples
 
@@ -50,10 +50,10 @@ The plugin can intelligently sort notes based on their filename:
 4. Set your preferred output folder for daily notes
 5. When exported, these timestamp-named notes will automatically go to your chosen daily notes folder
 
-### Concept Notes Workflow
+### Other Notes Workflow
 1. When you create custom-named notes on your Supernote (like `Meeting Notes.note` or `Project Ideas.note`)
-2. These will be recognized as concept notes (not matching the timestamp pattern)
-3. When exported, these concept notes will be placed in your designated concept folder (or the vault root if left empty)
+2. These will be recognized as non-daily notes (not matching the timestamp pattern)
+3. When exported, these notes will be placed in your designated folder for other notes (or the vault root if left empty)
 
 ## Development
 
