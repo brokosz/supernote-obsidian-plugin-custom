@@ -12,8 +12,12 @@ This is a customized fork of the [Supernote-Obsidian plugin](https://github.com/
 ### Note Categorization
 - Automatically categorize notes as "daily notes" or "concept notes" based on filename patterns
 - Send daily notes to a dedicated Daily Notes folder
-- Send concept notes (non-daily) to a separate Notes folder
-- Customize the detection pattern with regular expressions
+- Send concept notes (non-daily) to a separate folder or the vault root
+- Customize the detection pattern with moment.js format strings
+
+### Folder Suggestion
+- Improved folder path suggestions when typing in path fields
+- Makes it easier to navigate your vault folder structure
 
 ## Installation
 
@@ -27,27 +31,29 @@ This is a customized fork of the [Supernote-Obsidian plugin](https://github.com/
 ### Custom Output Paths
 In the plugin settings, you can specify custom paths for:
 - Images: Where exported PNG files will be saved (default: `_assets/supernote/images`)
-- Markdown: Where exported markdown files will be saved (default: `_assets/supernote/markdown`)
+- Markdown: Where exported markdown files will be saved (default: empty - same location as source)
 - PDF: Where exported PDF files will be saved (default: `_assets/supernote/pdf`)
 
 ### Note Categorization
 The plugin can intelligently sort notes based on their filename:
 - Enable note categorization: Toggle this setting on to use smart categorization
-- Daily note pattern: Use a regular expression to identify which notes are daily notes (default pattern matches YYYY-MM-DD format)
-- Daily note output folder: The folder where daily notes will be placed (default: `Daily Notes`)
-- Concept note output folder: The folder where non-daily notes will be placed (default: `Notes`)
+- Daily note pattern: Use a moment.js format to identify which notes are daily notes (default: `YYYYMMDD-HHMMSS`)
+- Daily note output folder: The folder where daily notes will be placed (default: `daily`)
+- Concept note output folder: The folder where non-daily notes will be placed (default: root of vault)
 
 ## Workflow Examples
 
 ### Daily Notes Workflow
-1. Create notes on your Supernote using the date format (e.g., `2025-05-19`)
-2. Enable note categorization and set your preferred daily note pattern
-3. When exported, these notes will automatically go to your Daily Notes folder, while their assets (images, original .note files) will go to the specified asset folders
+1. Supernote devices automatically name files with a timestamp format like `20250519-123045.note`
+2. Enable note categorization in the plugin settings
+3. Set the daily note pattern to `YYYYMMDD-HHMMSS` (the default)
+4. Set the daily note output folder to `daily`
+5. When exported, these timestamp-named notes will automatically go to your `daily` folder
 
 ### Concept Notes Workflow
-1. Create notes on your Supernote with descriptive titles (e.g., `Project Ideas`, `Meeting with Claire`)
-2. These will be recognized as concept notes (not matching the daily note pattern)
-3. When exported, these notes will be placed in your designated Notes folder
+1. When you create custom-named notes on your Supernote (like `Meeting Notes.note` or `Project Ideas.note`)
+2. These will be recognized as concept notes (not matching the timestamp pattern)
+3. When exported, these concept notes will be placed in your designated folder (or the vault root if left empty)
 
 ## Development
 
