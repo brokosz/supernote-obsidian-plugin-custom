@@ -16,7 +16,7 @@
   "author": "brokosz",
   "license": "MIT",
   "dependencies": {
-    "jspdf": "^2.5.1"
+    "jspdf": "^3.0.1"
   },
   "devDependencies": {
     "@types/node": "^16.11.6",
